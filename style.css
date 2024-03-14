@@ -1,5 +1,5 @@
 body {
-    background-image: url('/images/background.jpg');
+    background-image: url('./images/background.jpg');
     /* background-color: rgb(107, 177, 238); */
     background-size: cover;
     background-attachment: fixed;
