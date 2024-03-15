@@ -9,13 +9,14 @@ body {
     
 }
 
-
-
-
 /* styling heading and deading elements.. */
+/* #heading { */
+    /* position: fixed; */
+    /* z-index: 2; */
+/* } */
 #h1 {
     font-size: 6rem;
-    text-shadow: 4px 4px 8px rgba(7, 7, 7, 0.7);
+    text-shadow: 8px 8px 16px rgba(7, 7, 7, 0.7);
     margin-bottom: 0px;
     margin-top: 2%;
 }
@@ -30,33 +31,29 @@ body {
     margin-top: 0px;
     margin-bottom: 2%;
 }
+
+
+/* styling button */
 #button {
     display: flex;
     justify-content: center;
 }
-
-
-
-
-/* styling button */
 .category-button {
     color: white;
-    background-color: transparent;
+    /* background-color: transparent; */
     cursor: pointer;
-    border-top: none;
-    border-left: none;
     font-size: 1.2rem;
     font-family: "Roboto", sans-serif;
     margin-left: 3%;
-    box-shadow: none;
-    background-color: rgb(120, 120, 131);
+    background-color: rgb(41, 41, 153);
     border-radius: 0.5rem;
+    box-shadow: 4px 4px 8px rgba(7, 7, 7, 0.7);
     padding: 0.5rem;
+    text-decoration: none;
 }
 .category-button:hover {
     background-color: rgba(146, 235, 13, 0.627);
 }
-
 
 
 
@@ -67,14 +64,19 @@ body {
     margin-right: auto;
     margin-top: 2%;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* grid-auto-flow: dense; */
     gap: 10px;
+    /* background-color: aliceblue; */
 }
 
-.img {
-/*     background-color: rgb(218, 16, 16); */
-    border-radius: 3px;
+img {
+    height: 100%;
     width: 100%;
-    border: 4px solid white;
+    border-radius: 2%;
+    transition: filter 0.01s ease;
 }
+.blur {
+    filter: blur(5px); 
+  }
