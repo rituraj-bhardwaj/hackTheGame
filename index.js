@@ -18,7 +18,24 @@ images.forEach(img => {
   });
 });
 
-lightbox.option({
-    'resizeDuration': 200,
-    'wrapAround': true
+// lightbox.option({
+//     'resizeDuration': 200,
+//     'wrapAround': true
+// });
+
+// script for fancybox....
+$(document).ready(function() {
+  $('[data-fancybox="gallery"]').fancybox({
+    // Fancybox options
+    loop: true,
+    buttons: [
+      "zoom",
+      "share",
+      "slideShow",
+      "fullScreen",
+      "download",
+      "thumbs",
+      "close"
+    ],
+  });
 });
